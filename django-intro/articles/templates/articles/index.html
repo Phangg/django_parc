@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>와... 자..ㅇ고!!</h1>
+<p>더 기쁘게 말해야지</p>
+<a href="{% url 'articles:dtl' %}">dtl로 이동</a>
+<a href="{% url 'articles:throw' %}">throw로 이동</a>
+<a href="{% url 'articles:catch' %}">catch로 이동</a>
+<a href="{% url 'articles:greeting' %}">greeting로 이동</a>
+
+<a href="{% url 'pages:index' %}">두번째 앱 인덱스로 이동</a>
+
+{% endblock content %}
+

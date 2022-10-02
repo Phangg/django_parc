@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+  <h1>dtl</h1>
+  <p>{{ name }}의 나이는 {{ age }}야!</p>
+  <p>{{ name|lower|truncatechars:7 }}의 나이는 {{ age }}야!</p>
+  {% comment %} <p>{{ foods.0 }}</p> {% endcomment %}
+  <p>{{ foods.1 }}</p>
+  <p>{{ foods.2 }}</p>
+  {% for food in foods %}
+    <p>{{ food }}</p>
+  {% endfor %}
+
+  {% if age %}
+    <p>{{ age }}</p>
+  {% else %}
+    <p>나이 없음</p>
+  {% endif %}
+
+{% endblock content %}
